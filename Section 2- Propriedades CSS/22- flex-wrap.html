@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Flex Wrap</title>
+    <style>
+        /* Estilo base para os contêineres flexíveis */
+        .flex-container {
+            display: flex;
+            width: 100%;
+            height: 200px;
+            margin-bottom: 20px;
+            background-color: lightgray;
+            flex-wrap: nowrap; /* Padrão */
+            overflow: hidden; /* Esconder o conteúdo que não se ajusta */
+        }
+
+        /* Estilo base para os itens flexíveis */
+        .flex-container div {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            font-weight: bold;
+            flex: 0 0 150px; /* Define a largura base dos itens */
+        }
+
+        /* Estilos para diferentes valores de flex-wrap */
+        .wrap {
+            flex-wrap: wrap;
+        }
+
+        .wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Exemplo de flex-wrap: nowrap (padrão)</h2>
+    <div class="flex-container">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+    </div>
+
+    <h2>Exemplo de flex-wrap: wrap</h2>
+    <div class="flex-container wrap">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+    </div>
+
+    <h2>Exemplo de flex-wrap: wrap-reverse</h2>
+    <div class="flex-container wrap-reverse">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+    </div>
+
+</body>
+</html>
