@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combinação de overflow-y e overflow-x</title>
+  <style>
+    .box-combinada {
+      width: 200px;
+      height: 100px;
+      background-color: lightgray;
+      border: 2px solid black;
+      overflow-y: auto;  /* Barra de rolagem vertical, se necessário */
+      overflow-x: hidden; /* Nenhuma barra de rolagem horizontal */
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Exemplo de `overflow-y: auto` e `overflow-x: hidden`</h2>
+  <div class="box-combinada">
+    Este conteúdo vai além da altura do elemento, então uma barra de rolagem vertical aparecerá. O conteúdo horizontal será cortado.
+    <p>Mais conteúdo para demonstrar o transbordo vertical.</p>
+    <p>Mais conteúdo.</p>
+  </div>
+
+</body>
+</html>
