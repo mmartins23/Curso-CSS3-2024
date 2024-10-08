@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo Combinado de Height</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 250px; /* Altura exata de 250px */
+      min-height: 150px; /* Altura mínima de 150px */
+      max-height: 400px; /* Altura máxima de 400px */
+      background-color: lightgoldenrodyellow;
+      overflow: auto; /* Adiciona barra de rolagem se o conteúdo exceder a altura máxima */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    Esta caixa tem uma altura exata de 250px, mas se o conteúdo ultrapassar 400px, uma barra de rolagem será exibida.
+    <p>Este é o conteúdo adicional que pode exceder a altura. Adicione mais conteúdo para ver como o comportamento da altura funciona com as propriedades de CSS.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam explicabo rem labore odit et saepe eius ipsum veniam alias qui, fugiat fugit ratione commodi amet distinctio? Facere, blanditiis eos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugit hic eius ipsam. Minus, cumque voluptate libero aspernatur deleniti dicta obcaecati nostrum ut nisi, voluptatibus corrupti quod veniam ea incidunt.</p>
+  </div>
+
+</body>
+</html>
