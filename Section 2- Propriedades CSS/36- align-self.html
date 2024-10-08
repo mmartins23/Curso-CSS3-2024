@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de align-self</title>
+    <style>
+        .flex-container {
+            display: flex;
+            height: 200px;
+            background-color: #f0f0f0;
+            align-items: flex-start; /* Alinha todos os itens no início */
+        }
+
+        .flex-item {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .item1 {
+            align-self: flex-start; /* Alinha este item no início */
+        }
+
+        .item2 {
+            align-self: center; /* Alinha este item no centro */
+        }
+
+        .item3 {
+            align-self: flex-end; /* Alinha este item no final */
+        }
+    </style>
+</head>
+<body>
+
+<div class="flex-container">
+    <div class="flex-item item1">Item 1</div>
+    <div class="flex-item item2">Item 2</div>
+    <div class="flex-item item3">Item 3</div>
+</div>
+
+</body>
+</html>
