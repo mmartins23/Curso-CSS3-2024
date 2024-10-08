@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de overflow-block</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 100px;
+      border: 1px solid black;
+      margin-bottom: 20px;
+    }
+
+    .visible {
+      overflow-block: visible;
+    }
+
+    .scroll {
+      overflow-block: scroll;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Exemplo de `overflow-block`</h2>
+
+  <h3>Overflow-block: visible</h3>
+  <div class="box visible">
+    Este conteúdo ultrapassa a altura da caixa, mas permanece visível. A barra de rolagem não é exibida.
+    <p>Mais texto para transbordar...</p>
+  </div>
+
+  <h3>Overflow-block: scroll</h3>
+  <div class="box scroll">
+    Este conteúdo ultrapassa a altura da caixa, e uma barra de rolagem vertical é exibida.
+    <p>Mais texto para transbordar...</p>
+  </div>
+
+</body>
+</html>

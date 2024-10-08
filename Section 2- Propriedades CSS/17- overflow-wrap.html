@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de overflow-wrap</title>
+  <style>
+    .box {
+      width: 150px;
+      border: 1px solid black;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .normal {
+      overflow-wrap: normal;
+    }
+
+    .break-word {
+      overflow-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Exemplo de `overflow-wrap`</h2>
+
+  <h3>Overflow-wrap: normal</h3>
+  <div class="box normal">
+    Este é um exemplo de uma palavra muitolongaparaquebrarautomaticamente e não será quebrada.
+  </div>
+
+  <h3>Overflow-wrap: break-word</h3>
+  <div class="box break-word">
+    Este é um exemplo de uma palavra muitolongaparaquebrarautomaticamente que será quebrada, evitando transbordo.
+  </div>
+
+</body>
+</html>

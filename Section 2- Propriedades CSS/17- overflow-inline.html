@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de overflow-inline</title>
+  <style>
+    .box {
+      width: 200px;
+      border: 1px solid black;
+      white-space: nowrap;
+      margin-bottom: 20px;
+    }
+
+    .visible {
+      overflow-inline: visible;
+    }
+
+    .scroll {
+      overflow-inline: scroll;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Exemplo de `overflow-inline`</h2>
+
+  <h3>Overflow-inline: visible</h3>
+  <div class="box visible">
+    Este é um exemplo de uma linha muito longa que ultrapassa o contêiner e continua visível sem rolagem.
+  </div>
+
+  <h3>Overflow-inline: scroll</h3>
+  <div class="box scroll">
+    Este é um exemplo de uma linha muito longa, e a barra de rolagem horizontal aparece.
+  </div>
+
+</body>
+</html>
