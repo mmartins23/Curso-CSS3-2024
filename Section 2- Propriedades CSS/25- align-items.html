@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Align Items Examples</title>
+  <style>
+    .container {
+      display: flex;
+      height: 200px;
+      border: 2px solid #000;
+      margin-bottom: 20px;
+      background-color: #f0f0f0;
+    }
+    
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #e43c5c;
+      margin: 10px;
+    }
+
+    /* Valor flex-start */
+    .flex-start {
+      align-items: flex-start;
+    }
+
+    /* Valor flex-end */
+    .flex-end {
+      align-items: flex-end;
+    }
+
+    /* Valor center */
+    .center {
+      align-items: center;
+    }
+
+    /* Valor baseline */
+    .baseline {
+      align-items: baseline;
+    }
+
+    .box-2 {
+      height: 50px; /* Altura diferente para visualizar baseline */
+    }
+
+    /* Valor stretch */
+    .stretch {
+      align-items: stretch;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Exemplos de align-items em CSS</h1>
+
+  <!-- Exemplo 1: flex-start -->
+  <h2>align-items: flex-start</h2>
+  <p>Seção flex-start: Os itens são alinhados no início do contêiner (no topo).</p>
+  <div class="container flex-start">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <!-- Exemplo 2: flex-end -->
+  <h2>align-items: flex-end</h2>
+  <p>Seção flex-end: Os itens são alinhados no final do contêiner (na parte inferior).</p>
+  <div class="container flex-end">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <!-- Exemplo 3: center -->
+  <h2>align-items: center</h2>
+  <p>Seção center: Os itens são alinhados no centro do contêiner.</p>
+  <div class="container center">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <!-- Exemplo 4: baseline -->
+  <h2>align-items: baseline</h2>
+  <p>Seção baseline: Os itens são alinhados de acordo com suas linhas de base de texto. Um dos itens tem uma altura diferente para destacar isso.</p>
+  <div class="container baseline">
+    <div class="box"></div>
+    <div class="box box-2"></div>
+    <div class="box"></div>
+  </div>
+
+  <!-- Exemplo 5: stretch -->
+  <h2>align-items: stretch</h2>
+  <p>Seção stretch: Os itens são esticados para preencher a altura total do contêiner (se não houver altura definida).</p>
+  <div class="container stretch">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+</body>
+</html>
