@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Resize no CSS3</title>
+    <style>
+        /* Propriedade resize para permitir redimensionamento */
+        textarea {
+            width: 300px;
+            height: 150px;
+            resize: both; /* Pode redimensionar tanto horizontalmente quanto verticalmente */
+            border: 1px solid #333;
+            padding: 10px;
+        }
+
+        /* Apenas redimensionamento horizontal */
+        .horizontal-resize {
+            resize: horizontal; /* Somente na direção horizontal */
+        }
+
+        /* Apenas redimensionamento vertical */
+        .vertical-resize {
+            resize: vertical; /* Somente na direção vertical */
+        }
+
+        /* Sem redimensionamento */
+        .no-resize {
+            resize: none; /* Não pode ser redimensionado */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Exemplo de Redimensionamento no CSS</h2>
+
+    <p><strong>Ambas as direções:</strong></p>
+    <textarea></textarea>
+
+    <p><strong>Apenas redimensionamento horizontal:</strong></p>
+    <textarea class="horizontal-resize"></textarea>
+
+    <p><strong>Apenas redimensionamento vertical:</strong></p>
+    <textarea class="vertical-resize"></textarea>
+
+    <p><strong>Sem redimensionamento:</strong></p>
+    <textarea class="no-resize"></textarea>
+
+</body>
+</html>
