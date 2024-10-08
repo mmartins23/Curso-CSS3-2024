@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplos de Place Content em Flexbox</title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      height: 200px;
+      border: 2px solid #000;
+      margin-bottom: 20px;
+      background-color: #f0f0f0;
+    }
+
+    .box {
+      width: 60px;
+      height: 60px;
+      background-color: #e43c5c;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Exemplos de place-content em CSS Flexbox</h1>
+
+  <!-- Exemplo 1: place-content: flex-start -->
+  <h2>place-content: flex-start</h2>
+  <p>O conteúdo é alinhado ao início do contêiner.</p>
+  <div class="container" style="place-content: flex-start;">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <!-- Exemplo 2: place-content: center -->
+  <h2>place-content: center</h2>
+  <p>O conteúdo é centralizado no contêiner.</p>
+  <div class="container" style="place-content: center;">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <!-- Exemplo 3: place-content: space-between -->
+  <h2>place-content: space-between</h2>
+  <p>O espaço é distribuído uniformemente entre os itens.</p>
+  <div class="container" style="place-content: space-between;">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <!-- Exemplo 4: place-content: space-around -->
+  <h2>place-content: space-around</h2>
+  <p>O espaço é distribuído uniformemente ao redor de cada item.</p>
+  <div class="container" style="place-content: space-around;">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <!-- Exemplo 5: place-content: stretch -->
+  <h2>place-content: stretch</h2>
+  <p>O conteúdo é esticado para preencher todo o espaço vertical do contêiner.</p>
+  <div class="container" style="place-content: stretch;">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+</body>
+</html>
