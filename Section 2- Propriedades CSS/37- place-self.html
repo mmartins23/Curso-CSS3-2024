@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de place-self com Flex</title>
+    <style>
+        .flex-container {
+            display: flex;
+            height: 200px;
+            background-color: #f0f0f0;
+            flex-direction: column; /* Alinha os itens em uma coluna */
+        }
+
+        .flex-item {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .item1 {
+            place-self: flex-start center; /* Este item será alinhado no início da coluna e centralizado na largura */
+        }
+
+        .item2 {
+            place-self: flex-end stretch; /* Este item será alinhado no final da coluna e esticado na largura */
+        }
+
+        .item3 {
+            place-self: center start; /* Este item será centralizado na largura e alinhado no início da coluna */
+        }
+
+        .item4 {
+            place-self: stretch stretch; /* Este item se esticará em ambas as direções */
+        }
+    </style>
+</head>
+<body>
+
+<div class="flex-container">
+    <div class="flex-item item1">Item 1</div>
+    <div class="flex-item item2">Item 2</div>
+    <div class="flex-item item3">Item 3</div>
+    <div class="flex-item item4">Item 4</div>
+</div>
+
+</body>
+</html>
