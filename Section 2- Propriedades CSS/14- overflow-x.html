@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de overflow-x: auto</title>
+  <style>
+    .auto-box {
+      width: 200px;
+      height: 100px;
+      background-color: lightpink;
+      border: 2px solid red;
+      overflow-x: auto; /* A barra de rolagem aparece apenas se o conteúdo transbordar */
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Exemplo de `overflow-x: auto`</h2>
+  <div class="auto-box">
+    Este conteúdo é maior que a largura do elemento. Quando isso acontece, uma barra de rolagem horizontal aparecerá.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laboriosam modi at alias quas beatae, distinctio dolorem! Recusandae voluptatum, vitae neque veniam nostrum voluptas fuga quaerat id, saepe quae adipisci!
+  </div>
+
+</body>
+</html>
