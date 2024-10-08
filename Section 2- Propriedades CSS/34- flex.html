@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de flex com tamanhos específicos</title>
+    <style>
+        .flex-container {
+            display: flex;
+            background-color: #f0f0f0;
+            padding: 10px;
+            height: 100px;
+        }
+
+        .flex-item {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .item1 {
+            flex: 1 1 100px; /* Cresce, encolhe e tem um tamanho base de 100px */
+        }
+
+        .item2 {
+            flex: 0 1 200px; /* Não cresce, encolhe e tem um tamanho base de 200px */
+        }
+
+        .item3 {
+            flex: 1 1 150px; /* Cresce, encolhe e tem um tamanho base de 150px */
+        }
+    </style>
+</head>
+<body>
+
+<div class="flex-container">
+    <div class="flex-item item1">Item 1</div>
+    <div class="flex-item item2">Item 2</div>
+    <div class="flex-item item3">Item 3</div>
+</div>
+
+</body>
+</html>
