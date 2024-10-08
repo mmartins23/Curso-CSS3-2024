@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Border-Collapse</title>
+  <style>
+    table {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+      border: 2px solid black;
+    }
+
+    /* Estilo para a tabela com bordas separadas */
+    .separate-table {
+      border-collapse: separate;
+      border-spacing: 10px; /* Define o espaçamento entre as células no modo 'separate' */
+    }
+
+    /* Estilo para a tabela com bordas colapsadas */
+    .collapse-table {
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Tabela com `border-collapse: separate`</h2>
+  <table class="separate-table">
+    <tr>
+      <th>Coluna 1</th>
+      <th>Coluna 2</th>
+    </tr>
+    <tr>
+      <td>Celula 1</td>
+      <td>Celula 2</td>
+    </tr>
+    <tr>
+      <td>Celula 3</td>
+      <td>Celula 4</td>
+    </tr>
+  </table>
+
+  <h2>Tabela com `border-collapse: collapse`</h2>
+  <table class="collapse-table">
+    <tr>
+      <th>Coluna 1</th>
+      <th>Coluna 2</th>
+    </tr>
+    <tr>
+      <td>Celula 1</td>
+      <td>Celula 2</td>
+    </tr>
+    <tr>
+      <td>Celula 3</td>
+      <td>Celula 4</td>
+    </tr>
+  </table>
+
+</body>
+</html>
