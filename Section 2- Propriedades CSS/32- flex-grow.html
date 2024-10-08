@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de flex-grow</title>
+    <style>
+        .flex-container {
+            display: flex;
+            background-color: #f0f0f0;
+            padding: 10px;
+            height: 200px;
+        }
+
+        .flex-item {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .item1 {
+            flex-grow: 1; /* Cresce no espaço disponível */
+        }
+
+        .item2 {
+            flex-grow: 2; /* Cresce o dobro do item 1 */
+        }
+
+        .item3 {
+            flex-grow: 1; /* Cresce no espaço disponível */
+        }
+    </style>
+</head>
+<body>
+
+<div class="flex-container">
+    <div class="flex-item item1">Item 1</div>
+    <div class="flex-item item2">Item 2</div>
+    <div class="flex-item item3">Item 3</div>
+</div>
+
+</body>
+</html>
