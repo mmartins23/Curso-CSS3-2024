@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Sizing - border-box</title>
+  <style>
+    .content-box {
+      width: 300px; /* Define a largura apenas para o conteúdo */
+      height: 150px; /* Define a altura apenas para o conteúdo */
+      padding: 20px; /* Adiciona padding */
+      border: 10px solid red; /* Adiciona borda */
+      background-color: lightblue;
+      box-sizing: content-box; /* Valor padrão */
+    }
+    .border-box {
+      width: 300px; /* A largura total do elemento será 300px */
+      height: 150px; /* A altura total do elemento será 150px */
+      padding: 20px; /* O padding é incluído dentro da largura e altura */
+      border: 10px solid red; /* A borda também é incluída */
+      background-color: lightgreen;
+      box-sizing: border-box; /* Valor border-box */
+    }
+  </style>
+</head>
+<body>
+
+    <h2>Exemplo de `box-sizing: content-box` (valor padrão)</h2>
+    <div class="content-box">
+      Esta caixa tem 300px de largura de conteúdo, mas a largura total será maior.
+    </div>
+
+  <h2>Exemplo de `box-sizing: border-box`</h2>
+  <div class="border-box">
+    Esta caixa tem 300px de largura total, incluindo o padding e a borda.
+  </div>
+
+</body>
+</html>
