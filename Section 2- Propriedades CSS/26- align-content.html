@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Align Content - Flex Start</title>
+  <style>
+    .flex-start {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      height: 300px;
+      border: 2px solid #000;
+      background-color: #f0f0f0;
+    }
+    .flex-end {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-end;
+      height: 300px;
+      border: 2px solid #000;
+      background-color: #f0f0f0;
+    }
+    .center {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      height: 300px;
+      border: 2px solid #000;
+      background-color: #f0f0f0;
+    }
+    .space-between {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+      height: 300px;
+      border: 2px solid #000;
+      background-color: #f0f0f0;
+    }
+    .space-around {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-around;
+      height: 300px;
+      border: 2px solid #000;
+      background-color: #f0f0f0;
+    }
+    .stretch {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: stretch;
+      height: 300px;
+      border: 2px solid #000;
+      background-color: #f0f0f0;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #e43c5c;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>align-content: flex-start</h2>
+  <p>As linhas de itens são alinhadas ao início do contêiner (topo).</p>
+  <div class="flex-start">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <h2>align-content: flex-end</h2>
+  <p>As linhas de itens são alinhadas ao final do contêiner (na parte inferior).</p>
+  <div class="flex-end">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <h2>align-content: center</h2>
+  <p>As linhas de itens são centralizadas no contêiner.</p>
+  <div class="center">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <h2>align-content: space-between</h2>
+  <p>O espaço é distribuído entre as linhas de forma uniforme.</p>
+  <div class="space-between">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <h2>align-content: space-around</h2>
+  <p>O espaço é distribuído uniformemente ao redor de todas as linhas.</p>
+  <div class="space-around">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <h2>align-content: stretch</h2>
+  <p>As linhas são esticadas para preencher o espaço vertical do contêiner.</p>
+  <div class="stretch">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+</body>
+</html>
