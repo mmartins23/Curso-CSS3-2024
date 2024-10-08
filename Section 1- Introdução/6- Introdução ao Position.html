@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Position no CSS</title>
+    <style>
+        /* Posição estática (padrão) */
+        .static {
+            position: static;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        /* Posição relativa */
+        .relative {
+            position: relative;
+            top: 20px; /* Move 20px para baixo da sua posição original */
+            left: 30px; /* Move 30px para a direita da sua posição original */
+            background-color: lightcoral;
+            padding: 10px;
+        }
+
+        /* Posição absoluta */
+        .absolute {
+            position: absolute;
+            top: 100px; /* Posiciona 100px a partir do topo do seu parente mais próximo */
+            left: 50px; /* Posiciona 50px a partir da esquerda */
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        /* Posição fixa */
+        .fixed {
+            position: fixed;
+            bottom: 10px; /* Fixa 10px a partir da parte inferior da janela */
+            right: 10px; /* Fixa 10px a partir da direita da janela */
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+        /* Posição adesiva (sticky) */
+        .sticky {
+            position: sticky;
+            top: 0; /* O elemento fica fixo no topo quando a rolagem chegar a esse ponto */
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        /* Estilo básico para o conteúdo */
+        .content {
+            height: 1000px; /* Para demonstrar o efeito de rolagem */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exemplo de Position no CSS</h1>
+
+    <div class="static">
+        Este elemento está em posição estática (padrão).
+    </div>
+
+    <div class="relative">
+        Este elemento está em posição relativa (move-se em relação à sua posição original).
+    </div>
+
+    <div class="absolute">
+        Este elemento está em posição absoluta (posicionado em relação ao seu elemento pai).
+    </div>
+
+    <div class="fixed">
+        Este elemento está em posição fixa (sempre visível na parte inferior direita).
+    </div>
+
+    <div class="sticky">
+        Este elemento está em posição adesiva (fixa-se no topo quando você rola).
+    </div>
+
+    <div class="content">
+        Role para testar o comportamento do elemento sticky.
+    </div>
+
+</body>
+</html>

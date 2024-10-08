@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Seletores CSS3</title>
+    <style>
+        /* Seletor de ID */
+        #header {
+            font-size: 32px;
+            color: darkblue;
+            text-align: center;
+        }
+
+        /* Seletor de Classe */
+        .intro {
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        /* Seletor de Tipo */
+        p {
+            color: darkgray;
+        }
+
+        /* Seletor de Atributo */
+        a[target="_blank"] {
+            color: red;
+            text-decoration: none;
+        }
+
+        /* Pseudo-classe :hover */
+        button:hover {
+            background-color: #e43c5c;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Pseudo-classe :nth-child */
+        li:nth-child(2) {
+            font-weight: bold;
+            color: green;
+        }
+
+        /* Pseudo-elemento ::before */
+        h1::before {
+            content: "⭐ ";
+        }
+
+        /* Seletor Descendente */
+        div p {
+            color: black;
+            font-size: 16px;
+        }
+
+        /* Seletor de Negação */
+        p:not(.intro) {
+            font-size: 14px;
+        }
+
+        /* Seletor de Classe + Pseudo-classe */
+        .highlight:hover {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="header">Título Principal</h1>
+    <p class="intro">Este é um parágrafo introdutório.</p>
+    <p>Este parágrafo não faz parte da introdução.</p>
+    <ul>
+        <li>Item da lista 1</li>
+        <li>Item da lista 2</li>
+        <li>Item da lista 3</li>
+    </ul>
+    <div class="box">
+        <p>Aqui está um parágrafo dentro de um div.</p>
+        <p class="highlight">Outro parágrafo, mas com destaque.</p>
+    </div>
+    <a href="https://example.com" target="_blank">Link Externo</a>
+    <a href="https://example.com">Link Normal</a>
+    <button>Botão</button>
+</body>
+
+</html>

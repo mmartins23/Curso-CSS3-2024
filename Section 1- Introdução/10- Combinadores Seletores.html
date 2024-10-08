@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combinadores de Seletores</title>
+  <style>
+    /* Combinador Descendente */
+    div p {
+      color: blue;
+    }
+
+    /* Combinador Filho */
+    div > p {
+      font-weight: bold;
+    }
+
+    /* Combinador Irmão Adjacente */
+    h2 + p {
+      color: red;
+    }
+
+    /* Combinador Irmão Geral */
+    h2 ~ p {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Exemplo de Combinador Descendente -->
+  <div>
+    <p>Este é um parágrafo dentro de um div (combinador descendente).</p>
+    <section>
+      <p>Este parágrafo também é dentro de um div, mas em uma section (combinador descendente).</p>
+    </section>
+  </div>
+
+  <!-- Exemplo de Combinador Filho -->
+  <div>
+    <p>Eu sou um filho direto de um div (combinador filho).</p>
+    <section>
+      <p>Eu sou neto de um div, logo não sou afetado pelo combinador filho.</p>
+    </section>
+  </div>
+
+  <!-- Exemplo de Combinador Irmão Adjacente -->
+  <h2>Título</h2>
+  <p>Eu sou o parágrafo imediatamente após o h2 (combinador irmão adjacente).</p>
+  <p>Eu sou outro parágrafo, mas não sou adjacente ao h2.</p>
+
+  <!-- Exemplo de Combinador Irmão Geral -->
+  <h2>Outro Título</h2>
+  <p>Eu sou um parágrafo após o h2 (combinador irmão geral).</p>
+  <p>Eu também sou um parágrafo após o h2 (combinador irmão geral).</p>
+
+</body>
+</html>

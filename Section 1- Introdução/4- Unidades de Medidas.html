@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Unidades de Medida no CSS3</title>
+    <style>
+        /* Unidades Absolutas */
+
+        /* Pixels */
+        h1 {
+            font-size: 24px; /* Fonte de 24px */
+        }
+
+        /* Centímetros e milímetros */
+        div.cm {
+            width: 10cm; /* 10 centímetros de largura */
+            height: 50mm; /* 50 milímetros de altura */
+            background-color: lightblue;
+            margin-bottom: 20px;
+        }
+
+        /* Pontos */
+        p {
+            font-size: 12pt; /* Fonte de 12 pontos */
+        }
+
+        /* Polegadas */
+        img {
+            width: 2in; /* Largura de 2 polegadas */
+            height: auto;
+        }
+
+        /* Unidades Relativas */
+
+        /* Porcentagem */
+        div.percentage {
+            width: 50%; /* Largura de 50% do elemento pai */
+            background-color: lightgreen;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Em */
+        p.em-example {
+            font-size: 1.5em; /* Fonte 1.5 vezes o tamanho do pai */
+        }
+
+        /* Rem */
+        body {
+            font-size: 16px; /* Define a fonte raiz */
+        }
+
+        h2 {
+            font-size: 2rem; /* Fonte será 2 vezes a fonte raiz, ou seja, 32px */
+        }
+
+        /* Viewport (vw e vh) */
+        section {
+            width: 80vw; /* 80% da largura da tela */
+            height: 50vh; /* 50% da altura da tela */
+            background-color: lightcoral;
+            margin-bottom: 20px;
+        }
+
+        /* vmin */
+        div.vmin {
+            width: 50vmin; /* Largura será 50% da menor dimensão (largura ou altura da tela) */
+            height: 50vmin; /* Altura será 50% da menor dimensão */
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Unidades de Medida no CSS3</h1>
+
+    <div class="cm">Este `div` tem 10cm de largura e 50mm de altura.</div>
+
+    <p>Este parágrafo usa a unidade de ponto (12pt).</p>
+
+    <img src="https://via.placeholder.com/400" alt="Imagem Exemplo"> <!-- 2 polegadas de largura -->
+
+    <div class="percentage">Este `div` usa 50% da largura do elemento pai.</div>
+
+    <p class="em-example">Este parágrafo tem a fonte 1.5 vezes o tamanho da fonte do elemento pai (em).</p>
+
+    <h2>Este título usa a unidade `rem` para ter 32px de tamanho.</h2>
+
+    <section>Este `section` usa 80vw de largura e 50vh de altura.</section>
+
+    <div class="vmin">Este `div` usa 50vmin para largura e altura.</div>
+
+</body>
+
+</html>

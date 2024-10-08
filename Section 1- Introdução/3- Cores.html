@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Cores no CSS3</title>
+    <style>
+        /* Cores nomeadas */
+        h1 {
+            color: red;
+        }
+
+        /* RGB */
+        p {
+            background-color: rgb(255, 0, 0); /* Vermelho puro */
+            color: rgb(255, 255, 255); /* Branco */
+        }
+
+        /* RGBA */
+        div {
+            background-color: rgba(0, 0, 255, 0.5); /* Azul semitransparente */
+            color: white;
+            padding: 10px;
+        }
+
+        /* HEX */
+        button {
+            background-color: #e43c5c; /* Vermelho escuro */
+            color: #ffffff; /* Branco */
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* HSL */
+        a {
+            color: hsl(120, 100%, 50%); /* Verde brilhante */
+        }
+
+        /* HSLA */
+        section {
+            background-color: hsla(200, 100%, 50%, 0.3); /* Azul claro semitransparente */
+            padding: 20px;
+        }
+
+        /* Gradiente Linear */
+        header {
+            background: linear-gradient(to right, red, yellow);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Gradiente Radial */
+        footer {
+            background: radial-gradient(circle, blue, green);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Título Principal</h1>
+    <p>Este é um parágrafo com fundo vermelho e texto branco.</p>
+
+    <div>Este é um div com fundo azul semitransparente.</div>
+
+    <button>Botão</button>
+    
+    <a href="#">Este é um link com cor verde brilhante.</a>
+
+    <section>
+        Esta é uma seção com fundo azul claro e transparente.
+    </section>
+
+    <header>
+        Cabeçalho com gradiente linear de vermelho para amarelo.
+    </header>
+
+    <footer>
+        Rodapé com gradiente radial de azul para verde.
+    </footer>
+
+</body>
+</html>
