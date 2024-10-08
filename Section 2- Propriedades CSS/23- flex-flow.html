@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Flex Flow</title>
+    <style>
+        /* Estilo base para os contêineres flexíveis */
+        .flex-container {
+            display: flex;
+            width: 100%;
+            height: 200px;
+            margin-bottom: 20px;
+            background-color: lightgray;
+            overflow: hidden; /* Esconder o conteúdo que não se ajusta */
+        }
+
+        /* Estilo base para os itens flexíveis */
+        .flex-container div {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            font-weight: bold;
+            flex: 0 0 150px; /* Define a largura base dos itens */
+        }
+
+        /* Flex Flow: row nowrap (padrão) */
+        .row-nowrap {
+            flex-flow: row nowrap;
+        }
+
+        /* Flex Flow: row wrap */
+        .row-wrap {
+            flex-flow: row wrap;
+        }
+
+        /* Flex Flow: column wrap */
+        .column-wrap {
+            flex-flow: column wrap;
+        }
+
+        /* Flex Flow: column-reverse wrap */
+        .column-reverse-wrap {
+            flex-flow: column-reverse wrap;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Exemplo de flex-flow: row nowrap (padrão)</h2>
+    <div class="flex-container row-nowrap">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+    </div>
+
+    <h2>Exemplo de flex-flow: row wrap</h2>
+    <div class="flex-container row-wrap">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+    </div>
+
+    <h2>Exemplo de flex-flow: column wrap</h2>
+    <div class="flex-container column-wrap">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+    </div>
+
+    <h2>Exemplo de flex-flow: column-reverse wrap</h2>
+    <div class="flex-container column-reverse-wrap">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+    </div>
+
+</body>
+</html>
