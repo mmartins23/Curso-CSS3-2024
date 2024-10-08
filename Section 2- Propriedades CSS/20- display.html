@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Display no CSS</title>
+    <style>
+        /* Exemplo de display block */
+        .block {
+            display: block;
+            background-color: lightblue;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Exemplo de display inline */
+        .inline {
+            display: inline;
+            background-color: lightcoral;
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        /* Exemplo de display inline-block */
+        .inline-block {
+            display: inline-block;
+            background-color: lightgreen;
+            width: 150px;
+            height: 100px;
+            margin-right: 10px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Exemplo de display none */
+        .none {
+            display: none;
+        }
+
+        /* Exemplo de display flex */
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            background-color: lightgrey;
+            padding: 10px;
+        }
+
+        .flex-container div {
+            background-color: lightseagreen;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Exemplo de display grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            background-color: lightyellow;
+            padding: 10px;
+        }
+
+        .grid-container div {
+            background-color: lightsalmon;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Exemplo de display inherit */
+        .inherit {
+            display: block;
+            background-color: lightpink;
+            padding: 10px;
+        }
+
+        .inherit span {
+            display: inherit;
+            background-color: lightgoldenrodyellow;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Exemplo de display block -->
+    <div class="block">Este é um elemento block.</div>
+
+    <!-- Exemplo de display inline -->
+    <span class="inline">Elemento inline 1</span>
+    <span class="inline">Elemento inline 2</span>
+    <span class="inline">Elemento inline 3</span>
+
+    <!-- Exemplo de display inline-block -->
+    <div class="inline-block">Elemento inline-block 1</div>
+    <div class="inline-block">Elemento inline-block 2</div>
+
+    <!-- Exemplo de display none -->
+    <p class="none">Este parágrafo não será exibido porque tem display: none.</p>
+
+    <!-- Exemplo de display flex -->
+    <div class="flex-container">
+        <div>Item Flex 1</div>
+        <div>Item Flex 2</div>
+        <div>Item Flex 3</div>
+    </div>
+
+    <!-- Exemplo de display grid -->
+    <div class="grid-container">
+        <div>Item Grid 1</div>
+        <div>Item Grid 2</div>
+        <div>Item Grid 3</div>
+        <div>Item Grid 4</div>
+        <div>Item Grid 5</div>
+        <div>Item Grid 6</div>
+    </div>
+
+    <!-- Exemplo de display inherit -->
+    <div class="inherit">
+        Este é um elemento com display: inherit.
+        <span>Herda o display do pai (block).</span>
+    </div>
+
+</body>
+</html>
