@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Content</title>
+    <style>
+        .flex-start {
+            display: flex;
+            justify-content: flex-start;
+            background-color: lightgray;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .flex-end {
+            display: flex;
+            justify-content: flex-end;
+            background-color: lightgray;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .flex-center {
+            display: flex;
+            justify-content: center;
+            background-color: lightgray;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .flex-space-between {
+            display: flex;
+            justify-content: space-between;
+            background-color: lightgray;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .flex-space-around{
+            display: flex;
+            justify-content: space-around;
+            background-color: lightgray;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .flex-space-evenly {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: lightgray;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .box {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Justify Content: flex-start</h2>
+    <h3>flex-start: Os itens são alinhados no início do contêiner.</h3>
+    <div class="flex-start">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+
+    <h2>Justify Content: flex-end</h2>
+    <h3>flex-end: Os itens são alinhados no final do contêiner.</h3>
+    <div class="flex-end">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+
+    <h2>Justify Content: center</h2>
+    <h3>center: Os itens são centralizados no contêiner.</h3>
+    <div class="flex-center">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+
+    <h2>Justify Content: space-between</h2>
+    <h3>space-between: Os itens são distribuídos uniformemente com o primeiro item alinhado ao início e o último item alinhado ao final.</h3>
+    <div class="flex-space-between">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+
+    <h2>Justify Content: space-around</h2>
+    <h3>space-around: Os itens são distribuídos uniformemente, com espaço ao redor de cada item.
+    </h3>
+    <div class="flex-space-around">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+
+    <h2>Justify Content: space-evenly</h2>
+    <h3>space-evenly: Os itens são distribuídos uniformemente, com o mesmo espaço ao redor e entre eles.
+    </h3>
+    <div class="flex-space-evenly">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+</body>
+
+</html>
