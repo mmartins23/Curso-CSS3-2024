@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplos de background-size</title>
+  <style>
+    .container {
+      width: 400px;
+      height: 200px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      background-image: url('https://via.placeholder.com/300x200'); /* Imagem de fundo */
+      background-repeat: no-repeat; /* Para não repetir a imagem */
+    }
+
+    /* Exemplo 1: Tamanho original */
+    .exemplo-1 {
+      background-size: auto; /* ou omitir a propriedade */
+    }
+
+    /* Exemplo 2: Tamanho definido em pixels */
+    .exemplo-2 {
+      background-size: 100px 50px; /* Largura 100px, altura 50px */
+    }
+
+    /* Exemplo 3: Tamanho definido em porcentagem */
+    .exemplo-3 {
+      background-size: 50% 100%; /* Largura 50%, altura 100% */
+    }
+
+    /* Exemplo 4: Cover */
+    .exemplo-4 {
+      background-size: cover;
+    }
+
+    /* Exemplo 5: Contain */
+    .exemplo-5 {
+      background-size: contain;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Exemplos de background-size</h1>
+
+  <div class="container exemplo-1">
+    <h2>Exemplo 1: Tamanho original</h2>
+  </div>
+
+  <div class="container exemplo-2">
+    <h2>Exemplo 2: Tamanho definido em pixels</h2>
+  </div>
+
+  <div class="container exemplo-3">
+    <h2>Exemplo 3: Tamanho definido em porcentagem</h2>
+  </div>
+
+  <div class="container exemplo-4">
+    <h2>Exemplo 4: Cover</h2>
+  </div>
+
+  <div class="container exemplo-5">
+    <h2>Exemplo 5: Contain</h2>
+  </div>
+
+</body>
+</html>
