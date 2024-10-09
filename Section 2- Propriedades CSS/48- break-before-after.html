@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplos de break-before e break-after</title>
+  <style>
+    @media print {
+      .container {
+        width: 800px;
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        padding: 20px;
+        column-count: 2; /* Divide o conteúdo em duas colunas */
+      }
+
+      h2 {
+        break-after: avoid; /* Evita quebras de coluna depois do título */
+      }
+
+      .quebra-pagina {
+        break-before: page; /* Força uma quebra de página antes do elemento */
+      }
+
+      .evitar-quebra-coluna {
+        break-inside: avoid-column; /* Evita quebras de coluna dentro do elemento */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Exemplos de break-before e break-after</h1>
+
+  <div class="container">
+    <h2>Título 1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Donec sed odio dui.</p>
+
+    <h2>Título 2</h2>
+    <p>Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
+
+    <div class="quebra-pagina">
+      <h2>Título 3</h2>
+      <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+    </div>
+
+    <div class="evitar-quebra-coluna">
+      <h2>Título 4</h2>
+      <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+    </div>
+  </div>
+
+</body>
+</html>
