@@ -1,0 +1,20 @@
+.row, .row-reverse, .column, .column-reverse {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.column-reverse {
+  flex-direction: column-reverse;
+}
