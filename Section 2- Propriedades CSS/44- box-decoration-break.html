@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Box-Decoration-Break</title>
+   <style>
+    body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Caixa com o valor slice (padrão) */
+.slice-example {
+    width: 300px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #e43c5c;
+    border: 3px solid #333;
+    border-radius: 10px;
+    color: white;
+    box-decoration-break: slice; /* O valor padrão */
+}
+
+/* Caixa com o valor clone */
+.clone-example {
+    width: 300px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #8e44ad;
+    border: 3px solid #333;
+    border-radius: 10px;
+    color: white;
+    box-decoration-break: clone; /* Reinicia as decorações */
+}
+   </style>
+</head>
+<body>
+
+    <div class="slice-example">
+        <p>Este é um exemplo usando o valor padrão `slice` do `box-decoration-break`. A decoração continua consistentemente através de quebras de linha, sem ser reiniciada em cada linha dividida.</p>
+    </div>
+
+    <div class="clone-example">
+        <p>Este é um exemplo usando o valor `clone` do `box-decoration-break`. A decoração é reiniciada em cada quebra de linha. Veja como o background e as bordas são aplicados a cada fragmento do conteúdo.</p>
+    </div>
+
+</body>
+</html>
