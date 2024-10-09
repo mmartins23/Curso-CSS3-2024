@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplos de background-position</title>
+  <style>
+    .container {
+      width: 400px;
+      height: 200px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      background-image: url('https://via.placeholder.com/100x100'); /* Imagem de fundo */
+      background-repeat: no-repeat; /* Para não repetir a imagem */
+    }
+
+    /* Exemplo 1: Posição no canto superior esquerdo (padrão) */
+    .exemplo-1 {
+      background-position: top left; /* ou 0% 0% ou 0px 0px */
+    }
+
+    /* Exemplo 2: Posição centralizada */
+    .exemplo-2 {
+      background-position: center; /* ou 50% 50% */
+    }
+
+    /* Exemplo 3: Posição no canto inferior direito */
+    .exemplo-3 {
+      background-position: bottom right; /* ou 100% 100% */
+    }
+
+    /* Exemplo 4: Posição com valores em pixels */
+    .exemplo-4 {
+      background-position: 50px 100px; 
+    }
+
+    /* Exemplo 5: Posição com valores em porcentagem */
+    .exemplo-5 {
+      background-position: 25% 75%;
+    }
+
+    /* Exemplo 6: Posição com palavra-chave e valor */
+    .exemplo-6 {
+      background-position: right 20px; 
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Exemplos de background-position</h1>
+
+  <div class="container exemplo-1">
+    <h2>Exemplo 1: Top Left</h2>
+  </div>
+
+  <div class="container exemplo-2">
+    <h2>Exemplo 2: Center</h2>
+  </div>
+
+  <div class="container exemplo-3">
+    <h2>Exemplo 3: Bottom Right</h2>
+  </div>
+
+  <div class="container exemplo-4">
+    <h2>Exemplo 4: Pixels</h2>
+  </div>
+
+  <div class="container exemplo-5">
+    <h2>Exemplo 5: Porcentagem</h2>
+  </div>
+
+  <div class="container exemplo-6">
+    <h2>Exemplo 6: Right 20px</h2>
+  </div>
+
+</body>
+</html>
