@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Float CSS</title>
+    <style>
+        /* Estilos Gerais */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo das caixas */
+        .box {
+            width: 40%;
+            margin: 10px;
+            padding: 20px;
+            background-color: #e43c5c;
+            color: white;
+            border-radius: 5px;
+        }
+
+        /* Flutuação à esquerda */
+        .left {
+            float: left;
+        }
+
+        /* Flutuação à direita */
+        .right {
+            float: right;
+        }
+
+        /* Sem flutuação */
+        .none {
+            float: none;
+        }
+
+        /* Clearfix para evitar colapso de contêiner */
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box left">
+            <h2>Flutuando à Esquerda</h2>
+            <p>Este bloco flutua à esquerda. O conteúdo ao lado dele fluirá à direita.</p>
+        </div>
+        <div class="box right">
+            <h2>Flutuando à Direita</h2>
+            <p>Este bloco flutua à direita. O conteúdo ao lado dele fluirá à esquerda.</p>
+        </div>
+        <div class="box none">
+            <h2>Sem Flutuação</h2>
+            <p>Este bloco está no fluxo normal do documento e não flutua.</p>
+        </div>
+    </div>
+    <div class="clearfix">
+        <p>Usando clearfix para corrigir o problema de colapso do contêiner. O contêiner não colapsa e inclui
+            corretamente todos os seus elementos flutuantes.</p>
+    </div>
+</body>
+
+</html>
