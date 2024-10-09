@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Box-Shadow</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        div {
+            width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #e43c5c;
+            color: white;
+        }
+
+        /* Sombra básica */
+        .shadow-basic {
+            box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+            /* 10px à direita, 10px para baixo, 5px de desfoque */
+        }
+
+        /* Sombra com blur */
+        .shadow-blur {
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+            /* Aumenta o raio de desfoque para 15px */
+        }
+
+        /* Sombra com spread */
+        .shadow-spread {
+            box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.4);
+            /* Spread positivo de 5px */
+        }
+
+        /* Sombra interna (inset) */
+        .shadow-inset {
+            box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.5);
+            /* Sombra interna com inset */
+        }
+
+        /* Múltiplas sombras */
+        .shadow-multiple {
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5), -5px -5px 5px rgba(255, 255, 255, 0.5);
+            /* Duas sombras */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shadow-basic">
+        <h2>Sombra Básica</h2>
+    </div>
+    <div class="shadow-blur">
+        <h2>Sombra com Blur (Desfoque)</h2>
+    </div>
+    <div class="shadow-spread">
+        <h2>Sombra com Spread</h2>
+    </div>
+    <div class="shadow-inset">
+        <h2>Sombra Interna (Inset)</h2>
+    </div>
+    <div class="shadow-multiple">
+        <h2>Múltiplas Sombras</h2>
+    </div>
+</body>
+
+</html>
