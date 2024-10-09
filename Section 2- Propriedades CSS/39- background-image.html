@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplos de background-image</title>
+  <style>
+    .container {
+      width: 800px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+
+    /* Exemplo 1: Imagem simples */
+    .exemplo-1 {
+      background-image: url('https://via.placeholder.com/300x200');
+      height: 200px; /* Define a altura para a imagem ser visível */
+    }
+
+    /* Exemplo 2: Imagem repetida */
+    .exemplo-2 {
+      background-image: url('https://via.placeholder.com/100x100');
+      background-repeat: repeat;
+      height: 200px;
+    }
+
+    /* Exemplo 3: Imagem com tamanho definido */
+    .exemplo-3 {
+      background-image: url('https://via.placeholder.com/300x200');
+      background-size: 100px 50px; /* Largura e altura da imagem */
+      height: 200px;
+    }
+
+    /* Exemplo 4: Imagem cobrindo o elemento */
+    .exemplo-4 {
+      background-image: url('https://via.placeholder.com/300x200');
+      background-size: cover;
+      height: 200px;
+    }
+
+    /* Exemplo 5: Imagem contida no elemento */
+    .exemplo-5 {
+      background-image: url('https://via.placeholder.com/300x200');
+      background-size: contain;
+      height: 200px;
+    }
+
+    /* Exemplo 6: Imagem com posição definida */
+    .exemplo-6 {
+      background-image: url('https://via.placeholder.com/100x100');
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      height: 200px;
+    }
+
+    /* Exemplo 7: Múltiplas imagens */
+    .exemplo-7 {
+      background-image: url('https://via.placeholder.com/100x100'), url('https://via.placeholder.com/50x50');
+      background-repeat: no-repeat, repeat-y;
+      background-position: top left, right;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Exemplos de background-image</h1>
+
+  <div class="container exemplo-1">
+    <h2>Exemplo 1: Imagem simples</h2>
+  </div>
+
+  <div class="container exemplo-2">
+    <h2>Exemplo 2: Imagem repetida</h2>
+  </div>
+
+  <div class="container exemplo-3">
+    <h2>Exemplo 3: Imagem com tamanho definido</h2>
+  </div>
+
+  <div class="container exemplo-4">
+    <h2>Exemplo 4: Imagem cobrindo o elemento</h2>
+  </div>
+
+  <div class="container exemplo-5">
+    <h2>Exemplo 5: Imagem contida no elemento</h2>
+  </div>
+
+  <div class="container exemplo-6">
+    <h2>Exemplo 6: Imagem com posição definida</h2>
+  </div>
+
+  <div class="container exemplo-7">
+    <h2>Exemplo 7: Múltiplas imagens</h2>
+  </div>
+
+</body>
+</html>
