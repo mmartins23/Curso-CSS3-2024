@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplos de background</title>
+  <style>
+    .container {
+      width: 400px;
+      height: 200px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      text-align: center;
+      line-height: 200px; /* Centralizar verticalmente o texto */
+    }
+
+    /* Exemplo 1: Cor de fundo */
+    .exemplo-1 {
+      background: lightblue; 
+    }
+
+    /* Exemplo 2: Imagem de fundo */
+    .exemplo-2 {
+      background: url('https://via.placeholder.com/300x200') no-repeat center;
+    }
+
+    /* Exemplo 3: Cor e imagem */
+    .exemplo-3 {
+      background: lightcoral url('https://via.placeholder.com/100x100') repeat-x top;
+    }
+
+    /* Exemplo 4: Cover e posição */
+    .exemplo-4 {
+      background: url('https://via.placeholder.com/300x200') no-repeat bottom right / cover;
+    }
+
+    /* Exemplo 5: Múltiplas imagens */
+    .exemplo-5 {
+      background: url('https://via.placeholder.com/100x100') no-repeat top left, 
+                  url('https://via.placeholder.com/50x50') repeat-y right;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Exemplos de background</h1>
+
+  <div class="container exemplo-1">
+    Exemplo 1
+  </div>
+
+  <div class="container exemplo-2">
+    Exemplo 2
+  </div>
+
+  <div class="container exemplo-3">
+    Exemplo 3
+  </div>
+
+  <div class="container exemplo-4">
+    Exemplo 4
+  </div>
+
+  <div class="container exemplo-5">
+    Exemplo 5
+  </div>
+
+</body>
+</html>
